@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sayı Sayacı</title>
+    <script>
+        let count = 1; // Başlangıç değeri
+
+        function increase() {
+            count++;
+            document.getElementById("counter").innerText = count;
+        }
+
+        function decrease() {
+            if (count > 0) {
+                count--;
+                document.getElementById("counter").innerText = count;
+            }
+        }
+    </script>
+</head>
+<body>
+    <div>
+        
+        <span id="counter">1</span>
+        <button onclick="decrease()">-</button>
+        <button onclick="increase()">+</button>
+    </div>
+</body>
+</html>

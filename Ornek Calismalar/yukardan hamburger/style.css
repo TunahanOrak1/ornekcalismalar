@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+
+  
+  button {
+    background-color: black;
+    border: none;
+    outline: none;
+    color: white;
+    position: fixed;
+    padding: 20px;
+    cursor: pointer;
+    left: 500px;
+  }
+  
+  button.active, nav.active {
+    transform: translateX(-0px);
+    display: block;
+    
+  }
+
+
+  
+  nav {
+    background-color: black;
+    position: fixed;
+    height: 50vh;
+    padding: 2rem;
+    transform: translateX(100%);
+    transition: 1s ease;
+    display: none;
+    top: 60px;
+  }
+  
+  nav.active {
+    transform: translateX(0);
+    left: 465px;
+  }
+  
+  nav ul {
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav ul li {
+    list-style-type: none;
+    padding: 1rem 0;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+
+  @media(width <=380px) {
+
+  }
+  

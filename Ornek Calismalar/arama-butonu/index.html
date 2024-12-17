@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>H2 Class Search Engine</title>
+    <script src="index.js"></script>
+    <style>
+        .hidden {
+            display: none;
+        }
+        .result {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Arama giriş kutusu, keydown olayını dinler -->
+    <input type="text" id="searchInput" placeholder="Aramak istediğiniz metni girin">
+    
+    <!-- Sıfırlama butonu -->
+    <button onclick="resetSearch()">Sıfırla</button>
+    
+    <!-- Arama sonuçlarını göstermek için div -->
+    <div id="results" class="hidden"></div>
+
+    <!-- İçerik div'i, burada arama yapılacak h2 ve diğer elementler yer alır -->
+    <div class="content">
+        <div class="example-class-1">
+            <h2>Örnek Başlık 1</h2>
+            <p>Bu bir paragraftır.</p>
+        </div>
+        <div class="example-class-2">
+            <h2>Başka Bir Örnek Başlık</h2>
+            
+        </div>
+        <div class="example-class-3">
+            <h2>Son Başlık</h2>
+            <p>Bu son paragraf.</p>
+        </div>
+    </div>
+
+    <!-- JavaScript dosyasını bağlar -->
+    <script src="search.js"></script>
+</body>
+</html>
+

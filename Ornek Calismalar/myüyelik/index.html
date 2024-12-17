@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membership System</title>
+</head>
+<body>
+    <div id="authSection">
+        <h2>Register</h2>
+        <form id="registerForm">
+            <label for="regUsername">Username:</label>
+            <input type="text" id="regUsername" required>
+            <br>
+            <label for="regPassword">Password:</label>
+            <input type="password" id="regPassword" required>
+            <br>
+            <button type="submit">Register</button>
+        </form>
+
+        <h2>Login</h2>
+        <form id="loginForm">
+            <label for="loginUsername">Username:</label>
+            <input type="text" id="loginUsername" required>
+            <br>
+            <label for="loginPassword">Password:</label>
+            <input type="password" id="loginPassword" required>
+            <br>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+    <div id="profileSection" style="display: none;">
+        <h2>Welcome, <span id="usernameDisplay"></span></h2>
+        <button id="logoutButton">Logout</button>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
+
+

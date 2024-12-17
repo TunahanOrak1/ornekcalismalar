@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Market Sepeti Uygulaması</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1>Market Sepeti</h1>
+    <div id="products">
+        <div class="product">
+            <h2>Elma</h2>
+            <p>Fiyat: 3 TL</p>
+            <button onclick="addToCart('Elma', 3)">Sepete Ekle</button>
+        </div>
+        <div class="product">
+            <h2>Muz</h2>
+            <p>Fiyat: 5 TL</p>
+            <button onclick="addToCart('Muz', 5)">Sepete Ekle</button>
+        </div>
+        <div class="product">
+            <h2>Portakal</h2>
+            <p>Fiyat: 8 TL</p>
+            <button onclick="addToCart('Portakal', 8)">Sepete Ekle</button>
+    </div>
+    
+    </div>
+        <!-- Daha fazla ürün ekleyebilirsiniz -->
+    </div>
+    <h2>Sepet</h2>
+    <div id="cart">
+        <p>Sepetinizde ürün yok.</p>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

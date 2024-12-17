@@ -1,0 +1,61 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    height: 100vh;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  button {
+    background-color: indianred;
+    border: none;
+    outline: none;
+    color: white;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 20px;
+    cursor: pointer;
+    transition: 0.4s ease;
+  }
+  
+  button.active {
+    transform: translateX(-100px);
+  }
+  
+  nav {
+    background-color: indianred;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    padding: 2rem;
+    transform: translateX(100%);
+    transition: 0.4s ease;
+  }
+  
+  nav.active {
+    transform: translateX(0);
+  }
+  
+  nav ul {
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav ul li {
+    list-style-type: none;
+    padding: 1rem 0;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
